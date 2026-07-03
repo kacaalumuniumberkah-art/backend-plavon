@@ -7,6 +7,6 @@ const router = express.Router();
 router.post('/create', authMiddleware, createKategori);
 router.get('/', seeAllKategori);
 router.put('/update/:id', authMiddleware, modifyKategori);
-router.delete('/:id', authMiddleware, removeKategori);
+router.delete('/delete/:id', authMiddleware, removeKategori);
 
 export default router;
